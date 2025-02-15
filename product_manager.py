@@ -19,4 +19,6 @@ class ProductManager:
         total = sum(product.price * product.quantity for product in self.products)
         print(f"Ukupna vrijednost svih proizvoda: {total:.2f}.")
 
-
+def remove_product_by_name(self, name):
+        initial_count = len(self.products)
+        self.products = [product for product in self.products if product.name != name]
